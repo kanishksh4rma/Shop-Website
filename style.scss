@@ -20,9 +20,14 @@ body {
   }
   h2 {
     font-size: 30px;
+    color: rgb(14, 13, 13);
   }
   h3 {
     font-size: 20px;
+    color: $sub-heading-color;
+  }
+  h4{
+    font-size: 15px;
     color: $sub-heading-color;
   }
   p {
@@ -89,7 +94,7 @@ body {
     border: 1px solid $sub-heading-color;
     color: $sub-heading-color;
     height: 45px;
-    margin-top: 25px;
+    margin-top: 35px;
     padding-left: 15px;
     width: 403px;
     outline: none;
@@ -103,6 +108,7 @@ body {
 .page-2 {
   height: 150px;
   display: flex;
+  margin-top: 35px;
   align-items: center;
   .container {
     display: flex;
@@ -139,11 +145,12 @@ body {
 // Page 3
 
 .page-3 {
-  height: 90vh;
-  display: flex;
   align-items: center;
   // background-color: tomato;
+  width: 100%;
+  margin: 45px 0px;
   justify-content: center;
+  display: flex;
   .container {
     width: 80%;
     display: flex;
@@ -252,4 +259,115 @@ body {
       }
     }
   }
+}
+.page-4{
+  height: 70vh;
+  // background-color: pink;
+
+  .text-side{
+    // background-color: tomato;
+    width: 60%;
+    height: 100%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+
+    h2{
+      color: $heading-color;
+      font-size: 40px;
+      align-items: center;
+    }
+
+    p{
+      color: $sub-heading-color;
+      font-size: 18px;
+    }
+    #btn{
+      color: white;
+      background-color: $primary-color;
+      font-weight: 600;
+      height: 50px;
+      width: 150px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+
+      :hover{
+        cursor: pointer;
+
+      }
+    }
+  }
+}
+.page-5{
+  height: 40vh;
+  background-color: grey;
+
+  h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    // background-color: tomato;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+
+  .card{
+    margin-top: 25px;   
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: $heading-color;
+  }
+ }
+}
+.page-6{
+  height: 70vh;
+
+  h1{
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+  .card-container{
+    display: flex;
+    margin-left: 50px;
+    gap: 3px;
+  }
+  .divider{
+    height: 150px;
+    background-color: $sub-heading-color;
+    width: 1px;
+  }
+  .card{
+    padding-left: 20px;
+    height: 250px;
+    width: 280px;
+    // background-color: tomato;
+  }
+  h2{
+    font-weight: 500;
+  }
+  h3{
+    font-weight: 600;
+  }
+  .visit-us{;
+    height: 250px;
+    width: 280px;
+    // background-color: tomato;
+  }
+  a{
+    text-decoration: underline;
+    color: $sub-heading-color;
+    font-weight: 600;
+  }
+    #copyright{
+      margin-left:62px;
+    }
 }

@@ -357,18 +357,19 @@ body {
     display: flex;
     margin-left: 50px;
     gap: 3px;
+    .card {
+      padding-left: 20px;
+      height: 250px;
+      width: 280px;
+      // background-color: tomato;
+    }
   }
   .divider {
     height: 150px;
     background-color: $sub-heading-color;
     width: 1px;
   }
-  .card {
-    padding-left: 20px;
-    height: 250px;
-    width: 280px;
-    // background-color: tomato;
-  }
+
   h2 {
     font-weight: 500;
   }
@@ -451,6 +452,7 @@ body {
 
   // Page 3
   .page-3 {
+    margin-top: 30px;
     .container {
       width: 100%;
       text-align: center;
@@ -464,7 +466,7 @@ body {
       }
     }
     h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
   // signup
@@ -481,17 +483,17 @@ body {
       }
       .content-container {
         h2 {
-          font-size: 21px;
+          font-size: 30px;
         }
         .signup {
           flex-direction: column;
           align-items: center;
-          gap: 7px;
+          gap: 10px;
           #btn {
             border-radius: 9px;
           }
         }
-        height: 25vh;
+        height: 35vh;
         gap: 10px;
       }
     }
@@ -500,6 +502,7 @@ body {
   .page-4 {
     // height: 50vh;
     margin: 30px 0px;
+    padding: 0px 10px;
     // background-color: tomato;
     gap: 30px;
     display: flex;
@@ -528,7 +531,56 @@ body {
     }
   }
   // page-5
-  .page-5{
-
+  .page-5 {
+    width: 100%;
+    padding: 0px 20px;
+    height: 25vh;
+    h2 {
+      font-size: 30px;
+    }
+    .card-container {
+      .card {
+        height: 80px;
+        width: 120px;
+      }
+    }
+  }
+  // page 6
+  .page-6 {
+    h1 {
+      font-size: 30px;
+      margin-left: 18px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    .card-container {
+      flex-direction: column;
+      padding: 0px 10px;
+      margin: 0 0;
+      gap: 20px;
+      .card {
+        padding-left: 0px;
+      }
+      .link-box {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+      }
+      .visit-us{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        text-align: left;
+      }
+    }
+    .divider {
+      display: none;
+    }
   }
 }

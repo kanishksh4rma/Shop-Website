@@ -461,16 +461,16 @@ body p {
   gap: 3px;
 }
 
+.page-6 .card-container .card {
+  padding-left: 20px;
+  height: 250px;
+  width: 280px;
+}
+
 .page-6 .divider {
   height: 150px;
   background-color: #334756;
   width: 1px;
-}
-
-.page-6 .card {
-  padding-left: 20px;
-  height: 250px;
-  width: 280px;
 }
 
 .page-6 h2 {
@@ -556,6 +556,9 @@ body p {
   .page-2 .card h4 {
     font-size: 14px;
   }
+  .page-3 {
+    margin-top: 30px;
+  }
   .page-3 .container {
     width: 100%;
     text-align: center;
@@ -575,7 +578,7 @@ body p {
     margin: 30px 0px;
   }
   .page-3 h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .banner {
     height: 25vh;
@@ -589,11 +592,11 @@ body p {
     display: none;
   }
   .banner .container .content-container {
-    height: 25vh;
+    height: 35vh;
     gap: 10px;
   }
   .banner .container .content-container h2 {
-    font-size: 21px;
+    font-size: 30px;
   }
   .banner .container .content-container .signup {
     -webkit-box-orient: vertical;
@@ -603,13 +606,14 @@ body p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 7px;
+    gap: 10px;
   }
   .banner .container .content-container .signup #btn {
     border-radius: 9px;
   }
   .page-4 {
     margin: 30px 0px;
+    padding: 0px 10px;
     gap: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -647,6 +651,67 @@ body p {
   }
   .page-4 .text-side p {
     font-size: 14px;
+  }
+  .page-5 {
+    width: 100%;
+    padding: 0px 20px;
+    height: 25vh;
+  }
+  .page-5 h2 {
+    font-size: 30px;
+  }
+  .page-5 .card-container .card {
+    height: 80px;
+    width: 120px;
+  }
+  .page-6 h1 {
+    font-size: 30px;
+    margin-left: 18px;
+  }
+  .page-6 h2 {
+    font-size: 16px;
+  }
+  .page-6 h3 {
+    font-size: 14px;
+  }
+  .page-6 .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 10px;
+    margin: 0 0;
+    gap: 20px;
+  }
+  .page-6 .card-container .card {
+    padding-left: 0px;
+  }
+  .page-6 .card-container .link-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5%;
+  }
+  .page-6 .card-container .visit-us {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+  }
+  .page-6 .divider {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

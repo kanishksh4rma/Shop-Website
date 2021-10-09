@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@600&display=swap");
+// Google Fonts
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+// Colors and fonts variables
 $primary-color: rgba(33, 111, 229, 1);
 $heading-color: rgba(8, 32, 50, 1);
 $sub-heading-color: rgba(51, 71, 86, 1);
 $poppins-font: "Poppins", sans-serif;
-$quicksand-font: "Quicksand", sans-serif;
+$quicksand-font: "Racing", sans-serif;
 
+// Universal rules
 * {
   margin: 0%;
   padding: 0%;
@@ -26,7 +31,7 @@ body {
     font-size: 20px;
     color: $sub-heading-color;
   }
-  h4{
+  h4 {
     font-size: 15px;
     color: $sub-heading-color;
   }
@@ -34,6 +39,8 @@ body {
     font-size: 18px;
   }
 }
+
+// REAL CODE
 
 // Nav Bar
 
@@ -56,6 +63,7 @@ body {
   h2 {
     font-size: 22px;
     font-family: $quicksand-font;
+    color: white;
   }
   ul {
     color: white;
@@ -65,7 +73,11 @@ body {
   }
   a {
     text-decoration: none;
+    color: darken($color: white, $amount: 15);
+  }
+  a:hover {
     color: white;
+    font-weight: 500;
   }
 }
 
@@ -256,15 +268,20 @@ body {
           -ms-border-radius: 5px;
           -o-border-radius: 5px;
         }
+        #btn:hover {
+          cursor: pointer;
+          background-color: darken($color: $primary-color, $amount: 10);
+          transition: 400ms ease-in-out;
+        }
       }
     }
   }
 }
-.page-4{
+.page-4 {
   height: 70vh;
   // background-color: pink;
 
-  .text-side{
+  .text-side {
     // background-color: tomato;
     width: 60%;
     height: 100%;
@@ -274,17 +291,18 @@ body {
     justify-content: center;
     padding-left: 50px;
 
-    h2{
+    h2 {
       color: $heading-color;
       font-size: 40px;
       align-items: center;
     }
 
-    p{
+    p {
       color: $sub-heading-color;
       font-size: 18px;
     }
-    #btn{
+
+    #btn {
       color: white;
       background-color: $primary-color;
       font-weight: 600;
@@ -293,81 +311,224 @@ body {
       border: none;
       outline: none;
       border-radius: 10px;
-
-      :hover{
-        cursor: pointer;
-
-      }
+    }
+    #btn:hover {
+      cursor: pointer;
+      background-color: darken($color: $primary-color, $amount: 10);
+      transition: 400ms ease-in-out;
     }
   }
 }
-.page-5{
+.page-5 {
   height: 40vh;
   background-color: grey;
 
-  h2{
+  h2 {
     font-size: 35px;
     display: flex;
     justify-content: center;
     padding-top: 30px;
     // background-color: tomato;
   }
-  .card-container{
+  .card-container {
     display: flex;
     flex-direction: row;
     gap: 30px;
     justify-content: center;
 
-  .card{
-    margin-top: 25px;   
-    height: 100px;
-    width: 100px;
-    border: none;
-    border-radius: 10px;
-    background-color: $heading-color;
+    .card {
+      margin-top: 25px;
+      height: 100px;
+      width: 100px;
+      border: none;
+      border-radius: 10px;
+      background-color: $heading-color;
+    }
   }
- }
 }
-.page-6{
+.page-6 {
   height: 70vh;
 
-  h1{
+  h1 {
     margin-top: 50px;
     margin-left: 70px;
   }
-  .card-container{
+  .card-container {
     display: flex;
     margin-left: 50px;
     gap: 3px;
   }
-  .divider{
+  .divider {
     height: 150px;
     background-color: $sub-heading-color;
     width: 1px;
   }
-  .card{
+  .card {
     padding-left: 20px;
     height: 250px;
     width: 280px;
     // background-color: tomato;
   }
-  h2{
+  h2 {
     font-weight: 500;
   }
-  h3{
+  h3 {
     font-weight: 600;
   }
-  .visit-us{;
+  .visit-us {
     height: 250px;
     width: 280px;
     // background-color: tomato;
   }
-  a{
+  a {
     text-decoration: underline;
     color: $sub-heading-color;
     font-weight: 600;
   }
-    #copyright{
-      margin-left:62px;
+  #copyright {
+    margin-left: 62px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    .navbar-container {
+      width: 100%;
+      justify-content: space-evenly;
+      padding-left: 0px;
     }
+    #nav-logo {
+      display: none;
+    }
+  }
+
+  // Front page
+
+  .front-page {
+    height: 75vh;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      align-items: center;
+      width: 100%;
+      padding: 0px 5px;
+      h1 {
+        height: 40px;
+      }
+      h3 {
+        height: 20px;
+        font-weight: 500;
+      }
+    }
+    #search-bar {
+      width: 300px;
+    }
+  }
+
+  // Page 2
+  .page-2 {
+    margin-top: 25px;
+    #optional-card {
+      display: none;
+    }
+    .container {
+      padding: 0 5%;
+      gap: 5%;
+    }
+    .card {
+      height: 80px;
+      width: 80px;
+      img {
+        width: 40%;
+        height: 40%;
+      }
+      h4 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Page 3
+  .page-3 {
+    .container {
+      width: 100%;
+      text-align: center;
+
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 30px 0px;
+      }
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+  // signup
+  .banner {
+    height: 25vh;
+
+    .container {
+      height: 25vh;
+      text-align: center;
+      width: 100%;
+
+      .icon-container {
+        display: none;
+      }
+      .content-container {
+        h2 {
+          font-size: 21px;
+        }
+        .signup {
+          flex-direction: column;
+          align-items: center;
+          gap: 7px;
+          #btn {
+            border-radius: 9px;
+          }
+        }
+        height: 25vh;
+        gap: 10px;
+      }
+    }
+  }
+  // page 4
+  .page-4 {
+    // height: 50vh;
+    margin: 30px 0px;
+    // background-color: tomato;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: red;
+      height: 50%;
+      width: 100%;
+      img {
+        width: 60%;
+        height: 60%;
+      }
+    }
+    .text-side {
+      width: 100%;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  // page-5
+  .page-5{
+
+  }
 }

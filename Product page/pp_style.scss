@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Colors and fonts variables
+$primary-color: rgba(33, 111, 229, 1);
+$heading-color: rgba(8, 32, 50, 1);
+$sub-heading-color: rgb(29, 36, 41);
+$poppins-font: "Poppins", sans-serif;
+$quicksand-font: "Racing", sans-serif;
+
+body{
+    h1 {
+        font-size: 50px;
+        color: $heading-color;
+      }
+      h2 {
+        font-size: 30px;
+        color: $heading-color;
+      }
+      h3 {
+        font-size: 20px;
+        color: rgb(14, 13, 13);
+      }
+      h4 {
+        font-size: 15px;
+        color: $sub-heading-color;
+      }
+      p {
+        font-size: 18px;
+      }
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    .navbar {
+        background-color: lighten($heading-color, 8%);
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      
+        .navbar-container {
+          width: 55%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 30px;
+        }
+      
+        h2 {
+          font-size: 22px;
+          font-family: $quicksand-font;
+          color: white;
+        }
+        ul {
+          color: white;
+          display: flex;
+          gap: 20px;
+          list-style: none;
+        }
+        a {
+          text-decoration: none;
+          color: darken($color: white, $amount: 15);
+        }
+        a:hover {
+          color: white;
+          font-weight: 500;
+        }
+      }
+      
+    .main{
+        margin-top: 40px;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        gap: 4%;
+        
+        .img_sec{
+            width: 30%;
+            margin: 0% 4%;
+            border-radius: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .info_sec{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            line-height: 35px;
+            // background-color: skyblue;
+            input{
+                margin-top: 7%;
+                background-color: $heading-color;
+                border: none;
+                border-radius: 25px;
+                width: 20vw;
+                height: 7vh;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        .navbar {
+      .navbar-container {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-left: 0px;
+      }
+      #nav-logo {
+        display: none;
+      }
+    }
+    .main{
+        flex-direction: column;
+        margin: 5%;
+        height: 100vh;
+        width: 100%;
+        
+        .img_sec{
+            width: 50%;
+            height: 29vh;
+            margin: 0;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .info_sec{
+            width: 100%;
+            input{
+                margin-top: 5%;
+                border-radius: 25px;
+                width: 20vw;
+                height: 6vh;
+                background-color: lighten($color: $heading-color, $amount: 15);
+            }
+    }
+}
+    }
+}

@@ -41,7 +41,21 @@ body {
 }
 
 // REAL CODE
-
+.primary-btn {
+  color: white;
+  background-color: $primary-color;
+  font-weight: 600;
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.primary-btn:hover {
+  cursor: pointer;
+  background-color: darken($color: $primary-color, $amount: 10);
+  transition: 400ms ease-in-out;
+}
 // Nav Bar
 
 .navbar {
@@ -96,6 +110,10 @@ body {
   );
 
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
   // h3{
   //     color: $sub-heading-color;
@@ -115,6 +133,12 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     -webkit-border-radius: 30px;
+  }
+  .btns{
+    margin-top: 4%;
+    display: flex;
+    gap: 4%;
+    // width: 403px;
   }
 }
 .page-2 {
@@ -302,21 +326,7 @@ body {
       font-size: 18px;
     }
 
-    #btn {
-      color: white;
-      background-color: $primary-color;
-      font-weight: 600;
-      height: 50px;
-      width: 150px;
-      border: none;
-      outline: none;
-      border-radius: 10px;
-    }
-    #btn:hover {
-      cursor: pointer;
-      background-color: darken($color: $primary-color, $amount: 10);
-      transition: 400ms ease-in-out;
-    }
+    
   }
 }
 .page-5 {
@@ -422,6 +432,8 @@ body {
         font-weight: 500;
       }
     }
+    .btns{
+      margin-top: 2%;}
     #search-bar {
       width: 300px;
     }

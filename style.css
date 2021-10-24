@@ -380,7 +380,7 @@ body p {
   justify-content: center;
 }
 .page-5 .card-container .card {
-  margin-top: 25px;
+  /* margin-top: 25px; */
   height: 100px;
   width: 100px;
   border: none;
@@ -603,9 +603,17 @@ body p {
   .page-5 h2 {
     font-size: 30px;
   }
+  .page-5 .card-container{
+display:flex;    align-items: center;
+justify-content: center;
+  }
   .page-5 .card-container .card {
     height: 80px;
     width: 120px;
+  }
+  .page-5 .card-container .card img {
+    height: 100%;
+    width: 100%;
   }
 
   .page-6 h1 {
@@ -613,10 +621,10 @@ body p {
     margin-left: 18px;
   }
   .page-6 h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .page-6 h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .page-6 .card-container {
     flex-direction: column;
@@ -640,10 +648,9 @@ body p {
     justify-content: center;
     text-align: left;
     height: auto;
-
   }
   .page-6 #copyright {
-   margin-top: 30px;
+    margin-top: 30px;
     margin-left: 62px;
   }
   .page-6 .divider {

@@ -399,6 +399,8 @@ body p {
   margin-left: 62px;
 }
 
+/* responsive design  */
+
 @media screen and (max-width: 600px) {
   .navbar .navbar-container {
     width: 100%;
@@ -560,7 +562,7 @@ body p {
   .page-5 {
     width: 100%;
     padding: 0px 20px;
-    height: 25vh;
+    height: 30vh;
   }
   .page-5 h2 {
     font-size: 30px;

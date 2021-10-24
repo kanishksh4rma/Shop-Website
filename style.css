@@ -511,8 +511,8 @@ body p {
   }
 
   .page-4 .left-box {
-    height: 60vh;
-    width: 50vw;
+    height: 70vh;
+    width: 60vw;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -521,8 +521,8 @@ body p {
   }
 
   .page-4 .left-box svg {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
   }
   .page-4 .left-box svg #phone {
     animation: roll 0.7s infinite alternate;

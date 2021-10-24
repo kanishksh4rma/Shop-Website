@@ -88,7 +88,11 @@ body p {
   justify-content: center;
   padding-top: 55px;
   text-align: center;
-  background: linear-gradient(102.05deg, rgba(185, 81, 81, 0.83) 9.87%, rgba(32, 71, 172, 0.8217) 95.25%);
+  background: linear-gradient(
+    102.05deg,
+    rgba(185, 81, 81, 0.83) 9.87%,
+    rgba(32, 71, 172, 0.8217) 95.25%
+  );
 }
 .front-page .container {
   display: flex;
@@ -196,7 +200,11 @@ body p {
 
 .banner {
   height: 35vh;
-  background: linear-gradient(102.05deg, rgba(185, 81, 81, 0.83) 9.87%, rgba(32, 71, 172, 0.8217) 95.25%);
+  background: linear-gradient(
+    102.05deg,
+    rgba(185, 81, 81, 0.83) 9.87%,
+    rgba(32, 71, 172, 0.8217) 95.25%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,9 +267,49 @@ body p {
 }
 
 .page-4 {
-  height: 70vh;
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: row;
+}
+
+.page-4 .left-box {
+  height: 60vh;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  /* background-color: cyan; */
+}
+
+.page-4 .left-box svg {
+  width: 70%;
+  height: 70%;
+}
+.page-4 .left-box svg #phone {
+  animation: roll 0.7s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation: roll 0.7s infinite alternate;
+}
+@keyframes roll {
+  from {
+    transform: rotate(-14deg);
+    -webkit-transform: rotate(-14deg);
+    -moz-transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+    -o-transform: rotate(-14deg);
+  }
+  to {
+    transform: rotate(14deg);
+    -webkit-transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+    -ms-transform: rotate(14deg);
+    -o-transform: rotate(14deg);
+  }
 }
 .page-4 .text-side {
+  padding-top: 40px;
   width: 60%;
   height: 100%;
   gap: 24px;
@@ -307,6 +355,11 @@ body p {
 
 .page-6 {
   height: 70vh;
+}
+.page-6 .card-container .link-box {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
 }
 .page-6 h1 {
   margin-top: 50px;
@@ -456,17 +509,44 @@ body p {
     flex-direction: column;
     align-items: center;
   }
-  .page-4 .img-side {
-    display: flex;
+
+  .page-4 .left-box {
+    height: 60vh;
+    width: 50vw;
     justify-content: center;
     align-items: center;
-    height: 50%;
-    width: 100%;
+    display: flex;
+
+    /* background-color: cyan; */
   }
-  .page-4 .img-side img {
-    width: 60%;
-    height: 60%;
+
+  .page-4 .left-box svg {
+    width: 70%;
+    height: 70%;
   }
+  .page-4 .left-box svg #phone {
+    animation: roll 0.7s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: roll 0.7s infinite alternate;
+  }
+  @keyframes roll {
+    from {
+      transform: rotate(-14deg);
+      -webkit-transform: rotate(-14deg);
+      -moz-transform: rotate(-14deg);
+      -ms-transform: rotate(-14deg);
+      -o-transform: rotate(-14deg);
+    }
+    to {
+      transform: rotate(14deg);
+      -webkit-transform: rotate(14deg);
+      -moz-transform: rotate(14deg);
+      -ms-transform: rotate(14deg);
+      -o-transform: rotate(14deg);
+    }
+  }
+
   .page-4 .text-side {
     width: 100%;
   }
@@ -524,4 +604,4 @@ body p {
   .page-6 .divider {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

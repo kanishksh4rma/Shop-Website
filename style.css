@@ -385,7 +385,7 @@ body p {
   width: 100px;
   border: none;
   border-radius: 10px;
-  background-color: #082032;
+  /* background-color: #082032; */
 }
 
 .page-6 {
@@ -597,7 +597,8 @@ body p {
   .page-5 {
     width: 100%;
     padding: 0px 20px;
-    height: 30vh;
+    margin-top: 15px;
+    height: 25vh;
   }
   .page-5 h2 {
     font-size: 30px;
@@ -625,6 +626,7 @@ body p {
   }
   .page-6 .card-container .card {
     padding-left: 0px;
+    height: auto;
   }
   .page-6 .card-container .link-box {
     display: flex;
@@ -637,6 +639,12 @@ body p {
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    height: auto;
+
+  }
+  .page-6 #copyright {
+   margin-top: 30px;
+    margin-left: 62px;
   }
   .page-6 .divider {
     display: none;

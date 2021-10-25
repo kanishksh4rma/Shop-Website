@@ -380,7 +380,7 @@ body p {
   justify-content: center;
 }
 .page-5 .card-container .card {
-  /* margin-top: 25px; */
+  margin-top: 25px;
   height: 100px;
   width: 100px;
   border: none;
@@ -603,17 +603,22 @@ body p {
   .page-5 h2 {
     font-size: 30px;
   }
-  .page-5 .card-container{
-display:flex;    align-items: center;
-justify-content: center;
+  .page-5 .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .page-5 .card-container .card {
+    margin-top: 2px;
     height: 80px;
     width: 120px;
   }
   .page-5 .card-container .card img {
     height: 100%;
     width: 100%;
+  }
+  .page-5 .card-container .disp_non_mobile {
+    display: none;
   }
 
   .page-6 h1 {
